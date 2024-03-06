@@ -118,7 +118,7 @@ input {
   text-transform: uppercase;
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
+  white-space: nowrap; 
 }
 
 .content__video-card-description {
@@ -138,7 +138,7 @@ input {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  
+  overflow: hidden;
 }
 
 .content__card-link {
@@ -149,16 +149,13 @@ input {
 
 .content__card-link:active {
   background-color: rgb(84 80 80); 
+  text-decoration: none;
 }
 
 .content__card-link:hover {
   color: #fff;
   font-style: normal;
   text-decoration: underline;
-}
-
-.content__card-link:active {
-  text-decoration: none;
 }
 
 .content__card-link:focus {
@@ -220,10 +217,6 @@ input {
   text-decoration: underline;
 }
 
-.search-form__label:hover input[type='text'] {
-  text-decoration: none;
-}
-
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 2px;
@@ -264,6 +257,10 @@ input {
 .button:active {
   background-color: rgb(84 80 80);
   text-decoration: none;
+}
+
+.button:focus {
+  outline: none;
 }
 
 .button:focus-visible {
